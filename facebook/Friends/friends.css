@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    font-family: sans-serif;
+}
+.edit{
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 1;
+    box-shadow: 1px 2px 2.5px 0.5px #999;
+}
+.edit i{
+    font-size: 18px;
+}
+
+#center-text{
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    font-size: 20px;
+    color: #555;
+}
+@media(max-width: 950px){
+    #center-text{
+        display: none;
+    }
+}
+
+.sideTable::-webkit-scrollbar{
+    width: 7px;
+}
+.sideTable::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    border-radius: 3px;
+}
+.sideTable:hover::-webkit-scrollbar-thumb{
+    background-color: #C0C0C0;
+}
+.sideTable::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+.friends{
+    padding-top: 60px;
+}
+.sideTable{
+    width: 360px;
+    height: calc(100vh - 60px);
+    background-color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-y: auto;
+}
+.sideTable header{
+    border-bottom: 1px solid #999;
+}
+.sideTable header .grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.sideTable header p{
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+    padding: 12px 0;
+}
+.sideTable header .grid span{
+    display: flex;
+    flex-direction: column;
+}
+.sideTable header .grid span:nth-child(2){
+    align-items: center;
+}
+.sideTable header .grid span:nth-child(2) svg{
+    background-color: #E4E6EB;
+    padding: 4px;
+    border-radius: 50%;
+
+}
+.sideTable header .grid span:nth-child(2) a{
+    padding: 8px 5px;
+    margin-top: 4px;
+    color: #3340b6;
+    font-size: 15px;
+}
+.sideTable header .grid span:nth-child(2) a:hover{
+    background-color: #E4E6EB;
+}
+.sideTable header .grid span:nth-child(1) h3{
+    font-size: 24px;
+    padding: 5px 0 10px 0; 
+}
+.sideTable header .grid span:nth-child(1) h5{
+    font-size: 17px;
+}
+/* ----main side ------- */
+
+#fri-title{
+    font-size: 18px;
+    padding: 12px 0;
+}
+
+.friends-row .friend-box img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.friends-row .friend-box{
+    display: flex;
+    background-color: transparent;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.friends-row .friend-box:hover{
+    background-color: #eaecf1;
+}
+.friends-row .friend-box .contents p{
+    font-size: 17px;
+    font-weight: 600;
+    padding-left: 23px;
+}
+.friends-row .friend-box .contents .buttons{
+    display: flex;
+    align-items: center;
+    padding-top: 7px;
+    padding-left: 18px;
+}
+.friends-row .friend-box .contents .buttons div{
+    background-color: #1877F2;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    margin: 0 5px;
+    background-color: 8px;
+    border-radius: 8px;
+}
+.friends-row .friend-box .contents .buttons div:nth-child(2){
+    background-color: #ddd;
+    color: #111;
+}
+
+

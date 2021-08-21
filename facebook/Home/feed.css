@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap');
+
+.edit{
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 1;
+    box-shadow: 1px 2px 2.5px 0.5px #999;
+}
+.edit i{
+    font-size: 18px;
+}
+.container{
+    padding: 0 310px 0 290px;
+    padding-top: 20px;
+}
+.feed{
+    padding: 0 33px;
+    box-sizing: border-box;
+}
+.feed .create-story{
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.3);
+    margin-top: 56px;
+}
+.feed .create-story .story-box{
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    border-radius: 8px;
+}
+.feed .create-story .story-box:hover{
+    background-color: #E4E6EB;
+}
+.feed .create-story .story-box svg{
+    font-size: 26px;
+    color: #0571ED;
+    background-color: #E7F3FF;
+    padding: 6px;
+    border-radius: 50%;
+    margin: 8px 8px 8px 0;
+}
+.feed .create-story .story-box .story-info h3{
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px 0;
+    font-size: 15px;
+    color: #333;
+}
+.feed .create-story .story-box .story-info p{
+    font-family: sans-serif;
+    color: #777;
+    font-size: 14px;
+    font-weight: 100;
+    margin: 5px 0;
+}
+
+/* create postt */
+
+.create-post{
+    width: 70%;
+    background-color: #fff;
+    margin: 20px auto 0;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.3);
+}
+.create-post .header{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E4E6EB;
+    padding-bottom: 20px;
+}
+.create-post .header img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.create-post .header form{
+    background-color: #F0F2F5;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-radius: 20px;
+    padding-left: 25px;
+}
+.create-post .header form input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 100;
+}
+.create-post .icons{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.create-post .icons span{
+    display: flex;
+    align-items: center;
+}
+.create-post .icons span h4{
+    font-family: sans-serif;
+    color: #777;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 7px;
+}
+.create-post .icons span svg{
+    font-size: 30px;
+}
+.create-post .icons span:nth-child(1) svg{
+    color: #F02849;
+}
+.create-post .icons span:nth-child(2) svg{
+    color: #45BD62;
+}
+.create-post .icons span:nth-child(3) svg{
+    color: #F7B928;
+}
+
+.create-room{
+    width: 70%;
+    background-color: #fff;
+    margin: 20px auto 0;
+    border-radius: 10px;
+    box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    padding: 20px;
+}
+.create-room .icon{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    box-shadow: .2px .2px 2px .5px gray;
+    padding: 4px 10px;
+    border-radius: 15px;
+}
+.create-room .icon svg{
+    color: #B04CB6;
+    font-size: 27px;
+}
+.create-room .icon h4{
+    color: #5F6FDB;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-left: 7px;
+}
+
+/* ----------> post map started <------- */
+.post-card{
+    width: 70%;
+    margin: 20px auto 0;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.post-card .card-header .info{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.post-card .card-header .info .left{
+    display: flex;
+    align-items: center;
+}
+.post-card .card-header .info .left img{
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.post-card .card-header .info .left .group{
+    font-family: sans-serif;
+    padding-left: 11px;
+}
+.post-card .card-header .info .left .group h4{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+.post-card .card-header .info .left .group p{
+    font-size: 12px;
+    color: #777;
+}
+.post-card .card-header .title{
+    padding: 0 20px 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.card-img{
+    width: 100%;
+}
+.post-card footer{
+    padding: 0 20px;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+}
+.post-card footer .static{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+.post-card footer .static .like,.post-card .static .comment{
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+
+}
+.post-card footer .static .like p,.post-card .static .comment p{
+    padding: 0 7px;
+}
+.post-card footer .static .like svg{
+    background: linear-gradient(#15A7FC,#026DE2);
+    color: #fff;
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 15.5px;
+}
+.border-bottom{
+    width: 95%;
+    margin: 0 auto;
+    height: 1.5px;
+    background-color: #777;
+}
+.post-card footer .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.post-card footer .icons span{
+    display: flex;
+    color: #777;
+    align-items: center;
+}
+.post-card footer .icons span p{
+    font-family: sans-serif;
+    padding: 0 7px;
+}
+.post-card footer .write-comment{
+    display: flex;
+    align-items: center;
+}
+.post-card footer .write-comment img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+}
+.post-card footer .write-comment form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    background-color: #F0F2F5;
+    padding: 5px 0;
+    border-radius: 20px;
+}
+.post-card footer .write-comment form input{
+    width: 60%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding-left: 10px;
+}
+.post-card footer .write-comment form .emoje{
+    padding-right: 15px;
+}
+.post-card footer .write-comment form .emoje svg{
+    margin-left: 5px;
+    color: #777;
+    font-size: 23px;
+}
+
+/* -------> media responsible 1100px <------ */
+
+@media(max-width: 1100px){
+    .container{
+        padding-left: 0;
+    }
+}
+
+@media(max-width: 900px){
+    .container{
+        padding: 20px 0 0 ;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .feed{
+        width: 90%;
+    }
+}
+@media(max-width: 700px){
+    .feed{
+        width: 100%;
+    }
+}
+
+
+
+
+
